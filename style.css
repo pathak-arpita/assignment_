@@ -55,7 +55,7 @@ body {
     margin-top: 10px;
 }
 
-.block-1{
+.block-1 {
     border: 1px solid #C8C8C8;
     border-radius: 4px;
     height: 74.11px;
@@ -65,79 +65,91 @@ body {
     margin-bottom: 30px;
 }
 
-.inputDiv{
-    margin-left: 10px; 
+.inputDiv {
+    margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.containt{
+.containt {
     margin-top: 5px;
-    margin-left: 20px; 
+    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: start;
     font-size: 14.461px;
     flex-direction: column;
 }
-.innerdiv{
+
+.innerdiv {
     display: flex;
-}
-.text{
-    display: flex;
-    align-items: center;
-    margin-left: 130px; 
 }
 
-.below{
+.text {
+    display: flex;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.below {
     display: flex;
     margin-top: 72px;
     margin-left: -348px;
     display: none;
 }
 
-.below-2{
+.below-2 {
     display: flex;
     margin-top: 72px;
     margin-left: -322px;
     display: none;
 }
-.num{
-   font-size: 9px;
-   margin-top: 30px;
+
+.num {
+    font-size: 9px;
+    margin-top: 30px;
 }
-.num-2{
+
+.num-2 {
     margin-bottom: 8px;
     margin-top: 9px;
 }
-p{
+
+p {
     margin-top: 4px;
 }
-.size{
+
+.size {
     font-size: 10px;
     margin-left: 7px;
     margin-right: 4px;
     display: flex;
     flex-direction: column;
 }
-.color{
+
+.color {
     font-size: 10px;
     display: flex;
     flex-direction: column;
 }
-select{
+
+select {
     margin-bottom: 2px;
     padding: 0px 13px;
 }
-option{
+
+option {
     font-size: 10.85px;
 }
-.inputDiv2,.containt2{
-    margin-left: 10px; 
+
+.inputDiv2,
+.containt2 {
+    margin-left: 10px;
     margin-top: 25px;
 }
-.text-middle{
+
+.text-middle {
     font-size: 9.94px;
     margin-top: 23px;
     margin-left: 55px;
@@ -147,35 +159,37 @@ option{
     color: #9F9F9F;
     text-decoration-line: line-through;
 }
-.text-2{
+
+.text-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 25px;
-    margin-left: 150px; 
+    margin-left: 150px;
     font-size: 12.65px;
 }
-.text-21{
+
+.text-21 {
     color: #007F61;
     margin-bottom: 1.5px;
 }
 
-.block-4{
+.block-4 {
     display: flex;
     margin-top: -57px;
     font-size: 14px;
     margin-left: -53px;
 }
 
-.text-31{
+.text-31 {
     color: #007F61;
 }
 
-.text-32{
+.text-32 {
     margin-left: 141px;
 }
 
-button{
+button {
     display: flex;
     margin-top: -4px;
     margin-left: -317px;
@@ -186,13 +200,123 @@ button{
     border: none;
 }
 
-.block-6{
+.block-6 {
     display: flex;
     margin-top: 39px;
     margin-left: -173px;
     font-size: 12px;
-}    
+}
 
-input{
+input {
     accent-color: #007F61;
+}
+
+@media (max-width: 350px) {
+    .container {
+        width: 250px;
+        height: 500px;
+    }
+
+    .heading {
+        left: -44px;
+    }
+
+    .line-left,
+    .line-right {
+        display: none;
+    }
+
+    .block-1 {
+        width: 220px;
+    }
+
+    .innerdiv {
+        font-size: 9px;
+    }
+
+    .containt {
+        margin-top: 5px;
+        margin-left: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        font-size: 10.461px;
+        flex-direction: column;
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        margin-left: 63px;
+    }
+
+    .text-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 23px;
+        margin-left: 45px;
+        font-size: 9.65px;
+    }
+
+    .block-4 {
+        margin-top: -57px;
+        font-size: 10px;
+        margin-left: 19px;
+    }
+
+    button {
+        margin-top: -38px;
+        margin-left: -8px;
+        padding: 9px 44px;
+    }
+
+    .block-6 {
+        display: flex;
+        margin-top: -46px;
+        margin-left: 67px;
+        font-size: 12px;
+    }
+}
+
+@media(min-width:351px) and (max-width: 600px) {
+    .container {
+        width: 350px;
+        height: 500px;
+        margin-left: 2px;
+    }
+
+    .heading {
+        left: 6px;
+    }
+
+    .block-1 {
+        width: 320px;
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        margin-left: 92px;
+    }
+
+    .text-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        margin-left: 84px;
+        font-size: 12.65px;
+    }
+
+    .block-4 {
+        margin-top: -57px;
+        font-size: 10px;
+        margin-left: -53px;
+    }
+
+    button {
+        margin-top: -4px;
+        margin-left: -284px;
+    }
 }

@@ -98,3 +98,45 @@ function handleClick() {
     alert('Please select valid option!!'); 
   }
 }
+
+
+
+
+// Media query adjustments
+const mediaQuery = window.matchMedia('(min-width: 280px) and (max-width: 800px)');
+
+function handleMediaQueryChange() {
+  const textElements = document.querySelectorAll('.text');
+  const text2Elements = document.querySelectorAll('.text-2');
+
+  if (mediaQuery.matches) {
+    // Apply styles for the media query
+    textElements.forEach(text => {
+      text.style.width = '90%'; 
+      text.style.textAlign = 'end'; 
+      // text.style.marginLeft = '50px'; 
+    });
+
+    text2Elements.forEach(text2 => {
+      text2.style.marginTop = '20px'; 
+      text2.style.marginLeft = '40px'; 
+    });
+  } else {
+    // Reset styles when not in the media query
+    textElements.forEach(text => {
+      text.style.width = ''; 
+      text.style.textAlign = ''; 
+      text.style.marginLeft = ''; 
+    });
+
+    text2Elements.forEach(text2 => {
+      text2.style.marginTop = ''; 
+      text2.style.marginLeft = ''; 
+    });
+  }
+}
+
+mediaQuery.addEventListener('change', handleMediaQueryChange);
+handleMediaQueryChange();
+
+
